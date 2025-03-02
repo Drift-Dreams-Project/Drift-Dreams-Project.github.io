@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff8000,
+                #ffff00,
+                #80ff00,
+                #00ff00,
+                #00ff80,
+                #00ffff,
+                #0080ff,
+                #0000ff,
+                #8000ff,
+                #ff00ff,
+                #ff0080
+            );
+            background-size: 600% 600%;
+            animation: gradientAnimation 20s ease infinite;
+        }
+
+        .text {
+            color: white;
+            font-size: 4rem;
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">Coming Soon</div>
+</body>
+</html>
